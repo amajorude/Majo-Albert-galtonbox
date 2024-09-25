@@ -1,2 +1,1 @@
 # Packages and libraries to install
-pre-commit==3.7.1
