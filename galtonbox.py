@@ -5,7 +5,7 @@ from scipy.stats import norm
 import math
 
 N = 100 # Number of balls
-n = 15 # Number of levels
+n = 20 # Number of levels
 
 
 board = [0 for x in range(n + 1)] 
@@ -45,7 +45,7 @@ std_dev = math.sqrt(n)/2
 print('Gaussian mean: ', mean)
 print('Gaussian standard deviation: ', std_dev)
  
-x = np.linspace(0, n, 100)
+x = np.linspace(0, n + 1, max(100, 4*n))
 normal_dist = norm.pdf(x, mean, std_dev)
 
 # Calculate the mean quadratic error of the predictions with respect to the nornal function
@@ -60,9 +60,11 @@ print('Mean quadratic error: ', mean_quadratic_error)
 
 # Plot the experiment results
 plt.bar(range(len(scaled_board)), scaled_board, label='Binomial Results', color='#6495ED')
+plt.axvline(x=exp_mean, color='blue', linestyle='--', linewidth=1, label='Experiment Mean')
 
 # Plot the normal distribution
 plt.plot(x, normal_dist, color='black', label='Normal Distribution')
+plt.axvline(x=mean, color='black', linestyle='--', linewidth=1, label='Normal Mean')
 plt.xlabel('k')
 plt.ylabel('p(X=k)')
 plt.title('Experiment Results vs Normal Distribution')
