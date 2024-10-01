@@ -1,8 +1,7 @@
 # The Galton box. Assignment 1 Randomized Algorithms
 
 This project intends to simulate a Galton board or Galton box, a device used to illustrate the central limit theorem. 
-In particular, the purpouse of this project is to show experimentaly that with a sufficiently large sample the binomial 
-distribution is approximated by the normal distribution. 
+In particular, the purpose of this project is to show experimentally that with a sufficiently large sample, the binomial distribution is approximated by the normal distribution.
 
 All the relavant code is provided in the galtonbox.py file. First we define as parameters of the experiment the number 
 of balls of the experiment and the number of levels in which they can fall. We then simulate the Galton board with a one 
