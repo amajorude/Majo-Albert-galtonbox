@@ -1,1 +1,4 @@
-docs/git_commands.md
+docs/*
+*.xlsx
+*.yaml
+requirements:txt
