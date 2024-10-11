@@ -15,5 +15,5 @@ We then define the normal distribution that we want to compare with the experime
 expected value and the standard deviation of this distribution. Finally, we compute the mean quadratic error of the 
 observations with respect to the theoritical value from the normal distribution.
 
-Finally, we plot the experimental results of the experiment as well as the expected theoretical distribution.
+We then plot the experimental results of the simulation as well as the expected theoretical distribution.
 
